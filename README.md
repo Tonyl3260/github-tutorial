@@ -54,7 +54,39 @@ How to use **HTTP**:
 
 ---
 ## Workflow & Commands
-
+##### How to push your code to Github:
+Edit -> Add -> Commit -> Push 
+1. Edit your code and file. Make sure it is saved, ⌘s.
+2. Before you can add your code to the staging area, the directory must be intialized `git init`. To
+add the code to the staging area you can use `git add .` or `git add filename`. You can check to see
+if your code has to been added to the staging area by using `git status`.
+3. To commit your file, your file must be first add to the statging area. You can commit your file
+by using `git commit -m "msg"`. You can put a message when you commit to remind you what you just
+committed.
+4. To push your file the requirement above must be first fulfilled and a git remote to connect to your
+your local (c9). You can check to see what remote is connected to our directory by using `git remote -v`.
+You can push your code by using `git push origin master`. However if you flag your remote the first time
+by using `-u``git push -u origin master` you dont have to type `git push origin master` everytime you 
+want to push. Instead you can use `git push`.
 
 ---
 ## Rolling Back Changes
+git checkout -- FILENAME: Reset all changes made that are currently not staged (have'nt been `git add`).
+
+git reset HEAD FILENAME: Removes a file from the staging area.
+
+`number`- amount of commits to go back. Changing the number changes the amount of time you undo something.
+
+git reset --soft HEAD~1: Undo the previous commit, keeping the files in the stating area and the changes
+made previously.
+
+git reset HEAD~1: Undo the previous commit, but **Remove** the files from the staging area while keeping the
+the changes made previously.
+
+git reset --hard HEAD~1: Undo the previous commit, but **Removes** both the file from the staging are and 
+the changes made.
+
+git reset --hard SHA: Rollback to a previous commit with the SHA provided. Changes will be LOST. Any
+commits after the commit with the provided SHA will be removed from the history.
+
+git revert SHA [...]: Creates a commit that is opposite from the commit provided by the SHA. It will do the opposite of that commit i.e. if you added files, it will remove them on the new commit.
