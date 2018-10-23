@@ -80,13 +80,11 @@ git reset HEAD FILENAME: Removes a file from the staging area.
 git reset --soft HEAD~1: Undo the previous commit, keeping the files in the stating area and the changes
 made previously.
 
-git reset HEAD~1: Undo the previous commit, but **Remove** the files from the staging area while keeping the
+git reset HEAD~1: Undo the previous commit, but **Remove** the files from the staging area while keeping 
 the changes made previously.
 
 git reset --hard HEAD~1: Undo the previous commit, but **Removes** both the file from the staging are and 
 the changes made.
 
-git reset --hard SHA: Rollback to a previous commit with the SHA provided. Changes will be LOST. Any
-commits after the commit with the provided SHA will be removed from the history.
-
-git revert SHA [...]: Creates a commit that is opposite from the commit provided by the SHA. It will do the opposite of that commit i.e. if you added files, it will remove them on the new commit.
+git reset --hard SHA: Undo to previous commit with the SHA from the beginning, all changes made after the
+commit will be lost.
