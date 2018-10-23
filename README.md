@@ -30,6 +30,7 @@ them. Used when coder start a new Git project.
 10. Now go to your repository and cd into workspace `cd ~/workspace`.
 11. Git clone that repository using the SSH key or http link.
 12. Now cd into that repository `cd (Name)` and then initalize `git init`
+13. ![1](SnapGit.png)
 
 
 Every new local (c9) needs a remote (github) to push work into. You can use a SSH key to help push files  
@@ -46,6 +47,7 @@ How to setup your **SSH** key:
 6. Click **SSH and GPG keys** [Link](https://github.com/settings/keys)
 7. Now press `New SSH key`
 8. Paste the SSH key from c9 and click `add SSH key`
+
 
 How to use **HTTP**:
 1. Go to your Github repository
