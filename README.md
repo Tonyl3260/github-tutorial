@@ -1,5 +1,4 @@
-# GitHub Tutorial
-#### _Tony Lin_
+# **GitHub Tutorial** by _Tony Lin_
 ---
 ## Git vs. GitHub
 Git is used for taking snapshots of your code (Add -> Commit) and it doesn't require Github. It a local
@@ -63,7 +62,7 @@ Edit -> Add -> Commit -> Push
 1. Edit your code and file. Make sure it is saved, ⌘s.
 2. Before you can add your code to the staging area, the directory must be intialized `git init`. To
 add the code to the staging area you can use `git add .` or `git add filename`. You can check to see
-if your code has to been added to the staging area by using `git status`.
+if your code has to been added to the staging area by using `git status`.  
 ![git add](Gitadd.png)
 3. To commit your file, your file must be first add to the statging area. You can commit your file
 by using `git commit -m "msg"`. You can put a message when you commit to remind you what you just
