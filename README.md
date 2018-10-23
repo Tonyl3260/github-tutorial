@@ -57,8 +57,8 @@ How to use **HTTPS**:
 
 ---
 ## Workflow & Commands
-##### How to push your code to Github:
-Edit -> Add -> Commit -> Push 
+#### How to push your code to Github:
+##### Edit -> Add -> Commit -> Push 
 
 1. Edit your code and file. Make sure it is saved, ⌘s.
 2. Before you can add your code to the staging area, the directory must be intialized `git init`. To
@@ -103,9 +103,9 @@ commit will be lost.
 ---
 ### Collabration
 Github allows users to collaboration together on projects by forking and cloning each others work and giving
-each other feedback or giving them improved code through pull request.
+each other feedback or giving them improved code through pull request.  
 `Clone`- Allows user to clone someone's work into their workspace, however you can not push to it.  
-`Fork`- Allows user to make a copy of someone's remote repository so they can push to it.
+`Fork`- Allows user to make a copy of someone's remote repository so they can push to it.  
 `Pull request`- Ask moderators for permission to merge your forked repository to their remote.
 #### How to clone:
 1. Go to someone's repository in Github and find something you want to clone
