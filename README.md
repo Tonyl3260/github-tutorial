@@ -25,12 +25,13 @@ them. Used when coder start a new Git project.
 6. Then press create repository
 7. Now go to your ide website (c9), *create an account if you dont have one.* 
 [Here is the link](https://c9.io/signup)
+![C9login](snapc9log.png)
 8. Create a repository by clicking on the `+` icon on the top right corner.
 9. Set up a SSH key or use a http link (*look below for guide*).
 10. Now go to your repository and cd into workspace `cd ~/workspace`.
 11. Git clone that repository using the SSH key or http link.
 12. Now cd into that repository `cd (Name)` and then initalize `git init`
-13. ![SSH](SnapGit.png)
+![SSH](SnapGit.png)
 
 Every new local (c9) needs a remote (github) to push work into. You can use a SSH key to help push files  
 into your repository or HTML. SSH is a one time setup that links your account with Github while HTTP
