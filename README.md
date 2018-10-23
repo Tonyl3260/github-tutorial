@@ -32,7 +32,6 @@ them. Used when coder start a new Git project.
 12. Now cd into that repository `cd (Name)` and then initalize `git init`
 13. ![1](SnapGit.png)
 
-
 Every new local (c9) needs a remote (github) to push work into. You can use a SSH key to help push files  
 into your repository or HTML. SSH is a one time setup that links your account with Github while HTTP
 reqiures you to log into your Github account everytime you want to push.
