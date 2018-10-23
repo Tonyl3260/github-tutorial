@@ -17,7 +17,8 @@ them. Used when coder start a new Git project.
 ---
 ## Repository Setup
 1. Go to Github.com, *create a Github account if you dont already have one.*
-[Here is the link](https://github.com/)
+[Here is the link](https://github.com/)  
+![Githublogin](Snapgitlog.png)
 2. Click on your avatar on the top right corner.
 3. Click `your repository`
 4. Press `New`
@@ -29,30 +30,30 @@ them. Used when coder start a new Git project.
 8. Create a repository by clicking on the `+` icon on the top right corner.
 9. Set up a SSH key or use a http link (*look below for guide*).
 10. Now go to your repository and cd into workspace `cd ~/workspace`.
-11. Git clone that repository using the SSH key or http link.
-12. Now cd into that repository `cd (Name)` and then initalize `git init`
-![SSH](SnapGit.png)
+11. Git clone that repository using the SSH key or https link.
+12. Now cd into that repository `cd (Name)` and then initalize `git init`  
 
 Every new local (c9) needs a remote (github) to push work into. You can use a SSH key to help push files  
 into your repository or HTML. SSH is a one time setup that links your account with Github while HTTP
 reqiures you to log into your Github account everytime you want to push.
 
 How to setup your **SSH** key:
-1. Go to your ide website (c9) 
+1. Go to your ide website (c9) or [Skip step 2 and 3](https://c9.io/account/ssh)
 2. Click on the gear icon on the top right corner.
 2. Click **SSH keys**
 3. Copy the SSH key on the top for public repository. Bottom SSH key for private repository.
-4. Now go to Github
+4. Now go to Github [Link](https://github.com/)
 5. Press on your avatar on top right corner.
 6. Click **SSH and GPG keys** [Link](https://github.com/settings/keys)
 7. Now press `New SSH key`
 8. Paste the SSH key from c9 and click `add SSH key`
 
 
-How to use **HTTP**:
+How to use **HTTPS**:
 1. Go to your Github repository
 2. Press `Clone or download`
-3. Now you get your http link 
+3. Now you get your http link  
+![Https](SnapGit2.png)
 
 ---
 ## Workflow & Commands
@@ -69,24 +70,69 @@ committed.
 your local (c9). You can check to see what remote is connected to our directory by using `git remote -v`.
 You can push your code by using `git push origin master`. However if you flag your remote the first time
 by using `-u``git push -u origin master` you dont have to type `git push origin master` everytime you 
-want to push. Instead you can use `git push`.
+want to push. Instead you can use `git push`.  
+
+#### What should show up when you `git push`:
+`
+tonyl3260:~/workspace/github-tutorial (master) $ git push
+Warning: Permanently added 'github.com,192.30.253.113' (RSA) to the list of known hosts.
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 21.22 KiB | 21.22 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:Tonyl3260/github-tutorial.git
+   dcfe786..debdc46  master -> master
+`
 
 ---
 ## Rolling Back Changes
-git checkout -- FILENAME: Reset all changes made that are currently not staged (have'nt been `git add`).
+`git checkout -- FILENAME`: Reset all changes made that are currently not staged (have'nt been `git add`).
 
-git reset HEAD FILENAME: Removes a file from the staging area.
+`git reset HEAD FILENAME`: Removes a file from the staging area.
 
 `number`- amount of commits to go back. Changing the number changes the amount of time you undo something.
 
-git reset --soft HEAD~1: Undo the previous commit, keeping the files in the stating area and the changes
+`git reset --soft HEAD~1`: Undo the previous commit, keeping the files in the stating area and the changes
 made previously.
 
-git reset HEAD~1: Undo the previous commit, but **Remove** the files from the staging area while keeping 
+`git reset HEAD~1`: Undo the previous commit, but **Remove** the files from the staging area while keeping 
 the changes made previously.
 
-git reset --hard HEAD~1: Undo the previous commit, but **Removes** both the file from the staging are and 
+`git reset --hard HEAD~1`: Undo the previous commit, but **Removes** both the file from the staging are and 
 the changes made.
 
-git reset --hard SHA: Undo to previous commit with the SHA from the beginning, all changes made after the
+`git reset --hard SHA`: Undo to previous commit with the SHA from the beginning, all changes made after the
 commit will be lost.
+
+---
+### Collabration
+Github allows users to collaboration together on projects by forking and cloning each others work and giving
+each other feedback or giving them improved code through pull request.
+`Clone`- Allows user to clone someone's work into their workspace, however you can not push to it.  
+`Fork`- Allows user to make a copy of someone's remote repository so they can push to it.
+`Pull request`- Ask moderators for permission to merge your forked repository to their remote.
+#### How to clone:
+1. Go to someone's repository in Github and find something you want to clone
+2. Now press on the the green `clone or download` button  
+3. Get the SSH or Https link
+4. Go to c9 and go to your workspace `cd ~/workspace`
+5. Enter `git clone (link)`
+
+#### How to fork:
+1. Go to Github and find a repository from a user you want to make a copy of
+2. Click on the fork button on the top right corner.  
+![Fork](Gitfork.png)
+3. press on the the green `clone or download` button  
+4. Get the SSH or Https link
+5. Go to c9 and go to your workspace `cd ~/workspace`
+6. Enter `git clone (link)`
+7. Now you can work on your local and push your commits to your remote.
+
+#### How to ask for a pull request:
+1. Go to someone's repository in Github
+2. Click on `pull request`
+3. Click `New pull request`
+4. Then click `Create pull request`  
+![Pullrequest](pullrequest.png)
