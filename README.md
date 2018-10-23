@@ -30,7 +30,7 @@ them. Used when coder start a new Git project.
 10. Now go to your repository and cd into workspace `cd ~/workspace`.
 11. Git clone that repository using the SSH key or http link.
 12. Now cd into that repository `cd (Name)` and then initalize `git init`
-13. ![1](SnapGit.png)
+13. ![SSH](SnapGit.png)
 
 Every new local (c9) needs a remote (github) to push work into. You can use a SSH key to help push files  
 into your repository or HTML. SSH is a one time setup that links your account with Github while HTTP
