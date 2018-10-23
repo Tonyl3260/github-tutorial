@@ -29,7 +29,8 @@ them. Used when coder start a new Git project.
 8. Create a repository by clicking on the `+` icon on the top right corner.
 9. Set up a SSH key or use a http link (*look below for guide*).
 10. Now go to your repository and cd into workspace `cd ~/workspace`.
-11. Git clone that repository using the SSH key or https link.
+11. Git clone that repository using the SSH link or https link.  
+![SSH link](SnapSSH.png)
 12. Now cd into that repository `cd (Name)` and then initalize `git init`  
 
 Every new local (c9) needs a remote (github) to push work into. You can use a SSH key to help push files  
