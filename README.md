@@ -59,58 +59,26 @@ How to use **HTTPS**:
 ## Workflow & Commands
 ##### How to push your code to Github:
 Edit -> Add -> Commit -> Push 
+
 1. Edit your code and file. Make sure it is saved, ⌘s.
 2. Before you can add your code to the staging area, the directory must be intialized `git init`. To
 add the code to the staging area you can use `git add .` or `git add filename`. You can check to see
 if your code has to been added to the staging area by using `git status`.
+![git add](Gitadd.png)
 3. To commit your file, your file must be first add to the statging area. You can commit your file
 by using `git commit -m "msg"`. You can put a message when you commit to remind you what you just
-committed.
+committed.  
+![git commit](Gitcommit.png)
 4. To push your file the requirement above must be first fulfilled and a git remote to connect to your
 your local (c9). You can check to see what remote is connected to our directory by using `git remote -v`.
 You can push your code by using `git push origin master`. However if you flag your remote the first time
 by using `-u``git push -u origin master` you dont have to type `git push origin master` everytime you 
-want to push. Instead you can use `git push`. 
-
-#### What should show up when you `git push`:
-`
-tonyl3260:~/workspace/github-tutorial (master) $ git push
-Warning: Permanently added 'github.com,192.30.253.113' (RSA) to the list of known hosts.
-Counting objects: 4, done.
-Delta compression using up to 8 threads.
-Compressing objects: 100% (4/4), done.
-Writing objects: 100% (4/4), 21.22 KiB | 21.22 MiB/s, done.
-Total 4 (delta 1), reused 0 (delta 0)
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To github.com:Tonyl3260/github-tutorial.git
-   dcfe786..debdc46  master -> master
-`
+want to push. Instead you can use `git push`.  
+![git push](Gitpush.png)
 
 #### What if `git push` **doesn't** push?
-* Use `git push --force`  
-##### What it should look like:
-`
-tonyl3260:~/workspace/github-tutorial (master) $ git push
-Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
-To github.com:Tonyl3260/github-tutorial.git
- ! [rejected]        master -> master (fetch first)
-error: failed to push some refs to 'git@github.com:Tonyl3260/github-tutorial.git'
-hint: Updates were rejected because the remote contains work that you do
-hint: not have locally. This is usually caused by another repository pushing
-hint: to the same ref. You may want to first integrate the remote changes
-hint: (e.g., 'git pull ...') before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-tonyl3260:~/workspace/github-tutorial (master) $ git push --force
-Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
-^XCounting objects: 86, done.
-Delta compression using up to 8 threads.
-Compressing objects: 100% (66/66), done.
-Writing objects: 100% (86/86), 46.45 KiB | 15.48 MiB/s, done.
-Total 86 (delta 25), reused 63 (delta 19)
-remote: Resolving deltas: 100% (25/25), done.
-To github.com:Tonyl3260/github-tutorial.git
- +30cdde6...dcfe786 master -> master (forced update)
-`
+* Use `git push --force`    
+![force push](forcepush.png)
 
 ---
 ## Rolling Back Changes
