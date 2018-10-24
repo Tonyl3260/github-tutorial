@@ -106,7 +106,7 @@ Github allows users to collaboration together on projects by forking and cloning
 each other feedback or giving them improved code through pull request.  
 `Clone`- Allows user to clone someone's work into their workspace, however you can not push to it.  
 `Fork`- Allows user to make a copy of someone's remote repository so they can push to it.  
-`Pull request`- Ask moderators for permission to merge your forked repository to their remote.
+`Pull request`- Ask moderators for permission to merge your forked repository to their remote.  
 `Git pull`- To pull a file from Github, usually after accepting a pull request.
 
 #### How to clone:
