@@ -67,7 +67,7 @@ if your code has been added to the staging area by using `git status`.
 ![git add](Gitadd.png)
 3. To commit your file, your file must be first added to the staging area. You can commit your file
 by using `git commit -m "msg"`. You can put a message when you commit to remind yourself what you just
-committed.  
+committed.
 ![git commit](Gitcommit.png)
 4. To push your file the requirement above must be first fulfilled and connected to a git remote to be pushed
 into by your local (c9). You can check to see what remote is connected to our directory by using `git remote -v`.
@@ -107,7 +107,7 @@ each other feedback or giving them improved code through pull request.
 `Clone`- Allows user to clone someone's work into their workspace, however you can not push to it.  
 `Fork`- Allows user to make a copy of someone's remote repository so they can push to it.  
 `Pull request`- Ask moderators for permission to merge your forked repository to their remote.  
-`Git pull`- To pull a file from Github, usually after accepting a pull request.
+`Git pull`- To pull your remote repository to your local, usually when your remote is ahead few commit.
 
 #### How to clone:
 1. Go to someone's repository in Github and find something you want to clone
@@ -132,6 +132,7 @@ each other feedback or giving them improved code through pull request.
 3. Click `New pull request`
 4. Then click `Create pull request`  
 ![Pullrequest](pullrequest.png)
+5. Your pull request now has to be merged/denied by the reviewers of the repository.
 
 ---
 ### Error Handling
