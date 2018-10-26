@@ -136,4 +136,46 @@ each other feedback or giving them improved code through pull request.
 
 ---
 ### Error Handling
-*Work in progress*
+**When faced with an error**, try using `git status` to check for errors then google.  
+![Error1](giterror1.png)  
+Error: The programmer attempted to `git commit` the file before he added it to the staging
+area `git add`.  
+Solution: Before you commit a file, make sure you first add it to the staging area.  
+![Error2](giterror2.png)  
+Error: No edits were commited because edits weren't saved before they were added.  
+Solution: After making an edit, make sure you save your file by using ⌘s.   
+![Error3](giterror3.png)  
+Error: The programmer tried to commit the file without adding a message to it (flag
+the commit `-m`).  
+Solution: Press control+x, and include the flag `-m` before commiting next time.  
+![Error4](giterror4.png)   
+Error: A remote repository hasn't been connected to your local yet.   
+Solution: Connect the remote and the local by using your https or SSH link.  
+![Error5](giterror5.png)  
+Error: A upstream wasn't setup for the branch to know where to push git into.  
+Solution: Git push using `git push origin master` for your first time.  
+![Error6](giterror6.png)  
+Error: The programmer did not put a “ after update file.  
+Solution: Finish the input or press control+c.  
+![Error7](giterror7.png)  
+Error: You can not push codes in the staging area without first commiting them.  
+Solution:  `git commit -m` before pushing.  
+![Error8](giterror8.png)  
+Error: Stuff.txt is a deleted file, c9 does not know if they should add or not 
+add the file.  
+Solution: The programmer can use `git add --all` instead of `git add` to add
+deleted file to the staging area.  
+![Error9](giterror9.png)  
+Error: The programmer forgot to include `-m` while commiting.  
+Solution: Use `git commit -m` when commiting.  
+![Error10](giterror10.png)  
+Error: The programmer did not add any file and commit any changes before he
+tired to push.  
+Solution: The programmer has to `git add` and `git commit` before he can
+push anything to the repository.    
+![Error11](giterror11.png)  
+Error: The programmer cd above `~` so he could not cd back into workspace.  
+Solution: `cd ~/workspace`.  
+![Error12](giterror12.png)  
+Error: Git was initalized in the workspace.  
+Solution: cd to workspace and enter `rm -rf .git` to remove git.  
