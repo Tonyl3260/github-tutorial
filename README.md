@@ -57,8 +57,8 @@ How to use **HTTPS**:
 
 ---
 ## Workflow & Commands
-#### How to push your code to Github:
-##### Edit -> Add -> Commit -> Push 
+### How to push your code to Github:
+#### Edit -> Add -> Commit -> Push 
 
 1. Edit your code and file. Make sure it is saved, ⌘s.
 2. Before you can add your code to the staging area, the directory must be intialized `git init`. To
@@ -76,7 +76,7 @@ by using `-u``git push -u origin master` you dont have to type `git push origin 
 want to push. Instead you can use `git push`.  
 ![git push](Gitpush.png)
 
-#### What if `git push` **doesn't** push?
+### What if `git push` **doesn't** push?
 * Use `git push --force`    
 ![force push](forcepush.png)
 
@@ -101,7 +101,7 @@ the changes made.
 commit will be lost.
 
 ---
-### Collabration
+## Collabration
 Github allows users to collaboration together on projects by forking and cloning each others work and giving
 each other feedback or giving them improved code through pull request.  
 `Clone`- Allows user to clone someone's work into their workspace, however you can not push to it.  
@@ -109,14 +109,14 @@ each other feedback or giving them improved code through pull request.
 `Pull request`- Ask moderators for permission to merge your forked repository to their remote.  
 `Git pull`- To pull your remote repository to your local, usually when your remote is ahead few commit.
 
-#### How to clone:
+### How to clone:
 1. Go to someone's repository in Github and find something you want to clone
 2. Now press on the the green `clone or download` button  
 3. Get the SSH or Https link
 4. Go to c9 and go to your workspace `cd ~/workspace`
 5. Enter `git clone (link)`
 
-#### How to fork:
+### How to fork:
 1. Go to Github and find a repository from a user you want to make a copy of
 2. Click on the fork button on the top right corner.  
 ![Fork](Gitfork.png)
@@ -126,7 +126,7 @@ each other feedback or giving them improved code through pull request.
 6. Enter `git clone (link)`
 7. Now you can work on your local and push your commits to your remote.
 
-#### How to ask for a pull request:
+### How to ask for a pull request:
 1. Go to someone's repository in Github
 2. Click on `pull request`
 3. Click `New pull request`
@@ -135,9 +135,10 @@ each other feedback or giving them improved code through pull request.
 5. Your pull request now has to be merged/denied by the reviewers of the repository.
 
 ---
-### Error Handling
-**When faced with an error**, try using `git status` to check for errors then google.  
-![Error1](giterror1.png)  
+## Error Handling
+### **When faced with an error**, try using `git status` to check for errors then google.  
+![Error1](giterror1.png) 
+
 Error: The programmer attempted to `git commit` the file before he added it to the staging
 area `git add`.  
 Solution: Before you commit a file, make sure you first add it to the staging area.  
