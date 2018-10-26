@@ -144,8 +144,7 @@ each other feedback or giving them improved code through pull request.
 #### Error: No edits were commited because edits weren't saved before they were added.  
 #### Solution: After making an edit, make sure you save your file by using ⌘s.   
 ![Error3](giterror3.png)  
-#### Error: The programmer tried to commit the file without adding a message to it (flag
-#### the commit `-m`).  
+#### Error: The programmer tried to commit the file without adding a message to it (flag the commit `-m`).  
 #### Solution: Press control+x, and include the flag `-m` before commiting next time.  
 ![Error4](giterror4.png)   
 #### Error: A remote repository hasn't been connected to your local yet.   
@@ -160,18 +159,14 @@ each other feedback or giving them improved code through pull request.
 #### Error: You can not push codes in the staging area without first commiting them.  
 #### Solution:  `git commit -m` before pushing.  
 ![Error8](giterror8.png)  
-#### Error: Stuff.txt is a deleted file, c9 does not know if they should add or not 
-#### add the file.  
-#### Solution: The programmer can use `git add --all` instead of `git add` to add
-#### deleted file to the staging area.  
+#### Error: Stuff.txt is a deleted file, c9 does not know if they should add or not add the file.  
+#### Solution: The programmer can use `git add --all` instead of `git add` to add deleted file to the staging area.  
 ![Error9](giterror9.png)  
 #### Error: The programmer forgot to include `-m` while commiting.  
 #### Solution: Use `git commit -m` when commiting.  
 ![Error10](giterror10.png)  
-#### Error: The programmer did not add any file and commit any changes before he
-#### tired to push.  
-#### Solution: The programmer has to `git add` and `git commit` before he can
-#### push anything to the repository.    
+#### Error: The programmer did not add any file and commit any changes before he tired to push.  
+#### Solution: The programmer has to `git add` and `git commit` before he can push anything to the repository.    
 ![Error11](giterror11.png)  
 #### Error: The programmer cd above `~` so he could not cd back into workspace.  
 #### Solution: `cd ~/workspace`.  
